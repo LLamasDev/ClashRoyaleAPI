@@ -80,7 +80,7 @@ DATABASES = {
             'ENGINE': 'django.db.backends.mysql',
             'NAME': 'clashroyale',
             'USER': 'llamas',
-            'PASSWORD': '123',
+            'PASSWORD': '',
             'HOST': 'localhost',
             'PORT': '3306',
     }
