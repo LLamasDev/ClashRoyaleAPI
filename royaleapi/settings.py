@@ -78,11 +78,11 @@ WSGI_APPLICATION = 'royaleapi.wsgi.application'
 DATABASES = {
     'default': {
             'ENGINE': 'django.db.backends.mysql',
-            'NAME': 'clashroyale',
-            'USER': 'llamas',
+            'NAME': '',
+            'USER': '',
             'PASSWORD': '',
-            'HOST': 'localhost',
-            'PORT': '3306',
+            'HOST': '',
+            'PORT': '',
     }
 }
 
