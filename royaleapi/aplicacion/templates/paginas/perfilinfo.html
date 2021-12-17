@@ -1,0 +1,15 @@
+{% extends 'paginas/base.html' %}
+
+{% block titulo %}Perfil{% endblock titulo %}
+
+{% block contenido %}
+    <p>Nombre: {{ nombre }}{{ tag }}, nivel {{ nivel}}<br>
+    Arena: {{ arena }}<br>
+    Victorias totales: {{ wins }}<br>
+    Derrotas totales: {{ losses }}<br>
+    Tres coronas totales: {{ threeCrownWins }}<br>
+    Victorias en guerras: {{ warDayWins }}<br>
+    Récord en victorias en desafíos: {{ challengeMaxWins }}<br>
+    Clan: {{ clan.name }}{{ clan.tag }}<br>
+    Donaciones totales: {{ totalDonations }}<br>
+{% endblock contenido %}

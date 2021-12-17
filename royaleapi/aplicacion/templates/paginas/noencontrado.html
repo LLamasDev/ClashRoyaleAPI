@@ -1,0 +1,8 @@
+{% extends 'paginas/base.html' %}
+
+{% block titulo %}Error{% endblock titulo %}
+
+{% block contenido %}
+    <h1>Usuario no encontrado :(</h1>
+    {% load static %}<img src="{% static "media/404.png" %}" alt="404" class='centrar' />
+{% endblock contenido %}

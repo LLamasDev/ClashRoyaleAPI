@@ -1,0 +1,28 @@
+{% extends 'paginas/base.html' %}
+
+{% block titulo %}Jugador{% endblock titulo %}
+
+{% block contenido %}
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Alias</th>
+                <th>Tag</th>
+                <th>Idioma</th>
+                <th>Comandos usados</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for jugador in jugadores %}
+                <tr>
+                    <td>{{ jugador.id }}</td>
+                    <td>{{ jugador.alias }}</td>
+                    <td>{{ jugador.tag }}</td>
+                    <td>{{ jugador.idioma }}</td>
+                    <td>{{ jugador.usoTotal }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock contenido %}
